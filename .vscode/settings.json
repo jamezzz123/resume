@@ -1,0 +1,17 @@
+{
+    "window.zoomLevel": 0.5,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 26,
+    // "editor.fontFamily": "Fira code,Menlo, Monaco,'Courier New',monospace",
+    "editor.wordWrap": "on",
+    "editor.smoothScrolling": true,
+    "files.insertFinalNewline": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+   
+
+
+
+
+
+
+}
