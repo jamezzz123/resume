@@ -190,6 +190,16 @@ section {
 .photo{
     margin: 0px auto;
 }
+#resumeLink{
+color: #4f90cd;
+font-style: italic;
+text-decoration:none;
+}
+#resumeLink:hover {
+    color: #374458;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width:600px){
 
     .header{
