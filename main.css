@@ -3,12 +3,19 @@ body {
     line-height: 1.5;
     font-family: 'ABeeZee', sans-serif;
 }
+a {
+    padding:0px;
+    margin:0px;
+    text-decoration:none;
+    color:white;
+    text-align:left;
+}
+a:hover{
+    text-decoration:underline;
+}
 
 p {
     margin: 0px;
-}
-a{
-    font-style: italic;
 }
 
 h1,
