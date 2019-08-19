@@ -2,17 +2,29 @@ body {
     background: #f2f2f2;
     line-height: 1.5;
     font-family: 'Patua One',
-    cursive;
+    cursive; 
 }
 img{
     width: 100%;
+    animation-name: moves;
+    animation-direction: 5s;
 }
 
-
+h1{
+    animation-name: moves;
+    animation-direction: 5s;
+}
 h2,h3,h4,h5{
     text-transform: uppercase;
     margin: 0px auto;
+    
 }
+h4{
+    font-size: 1.1em;
+    /* animation-name: moves;
+    animation-direction: 3s; */
+}
+
 
 .page {
     max-width: 960px;
@@ -37,7 +49,7 @@ background: linear-gradient(180deg, rgba(93,122,214,1) 20%, rgba(93,197,196,1) 1
     /* height: 700px; */
     /* margin: 0px auto; */
 }
-.left div{
+.left > div{
      margin: 0px 20px;
     margin-bottom: 45px;
 }
@@ -45,6 +57,7 @@ background: linear-gradient(180deg, rgba(93,122,214,1) 20%, rgba(93,197,196,1) 1
 .right {
     background: white;
     padding: 5px;
+    
 
     /* width: 100%; */
     /* height: 700px; */
@@ -63,6 +76,7 @@ background: linear-gradient(180deg, rgba(93,122,214,1) 20%, rgba(93,197,196,1) 1
 }
 .image{
     margin: 10px;
+    text-align: center;
 }
 
 .avater{
@@ -70,6 +84,9 @@ background: linear-gradient(180deg, rgba(93,122,214,1) 20%, rgba(93,197,196,1) 1
     width: 250px;
     height: 250px;
     margin: 10px auto;
+     animation-name: moves;
+     animation-duration: 3s;
+     
 }
 
 .right h4,h5{
@@ -92,4 +109,33 @@ margin: 6px auto;
     margin: auto;
     font-style: italic;
     color: #5dc5c4;
+}
+
+@keyframes moves{
+  0%{
+    opacity: 0;
+     transform: translate3d(180deg);
+     transform: rotateY(180deg)
+  }
+
+  
+
+  100%{
+      opacity: 1;
+       
+  }
+}
+
+
+@media only screen and (max-width:600px) {
+
+    .page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+
+    .img-center{
+        margin: 0px auto;
+    }
 }
